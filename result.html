@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Human Development Index</h1>
+
+<h3 style="color:gold;">
+A machine learning web application using Flask
+</h3>
+
+<br>
+
+<h2 style="color:yellow;">
+
+{% if prediction >= 0.800 %}
+Very High HDI : {{ prediction }}
+
+{% elif prediction >= 0.700 %}
+High HDI : {{ prediction }}
+
+{% elif prediction >= 0.550 %}
+Medium HDI : {{ prediction }}
+
+{% else %}
+Low HDI : {{ prediction }}
+
+{% endif %}
+
+</h2>
+
+<br>
+
+<a href="/predict">
+    <button>Predict Again</button>
+</a>
+
+</div>
+
+</body>
+</html>

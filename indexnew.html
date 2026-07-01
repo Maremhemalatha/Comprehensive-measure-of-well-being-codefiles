@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Human Development Index</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<h1 align="center">Human Development Index</h1>
+
+<div class="container">
+
+<form action="/predict_result" method="POST">
+
+<select name="country" required>
+    <option value="">Select the Country</option>
+
+    {% for country in countries %}
+        <option value="{{ country }}">{{ country }}</option>
+    {% endfor %}
+
+</select>
+
+<br>
+
+<input type="number"
+name="life"
+step="0.01"
+placeholder="Enter Life Expectancy"
+required>
+
+<br>
+
+<input type="number"
+name="expected"
+step="0.01"
+placeholder="Enter Expected Years of Schooling"
+required>
+
+<br>
+
+<input type="number"
+name="mean"
+step="0.01"
+placeholder="Enter Mean Years of Schooling"
+required>
+
+<br>
+
+<input type="number"
+name="gni"
+step="0.01"
+placeholder="Enter Gross National Income"
+required>
+
+<br><br>
+
+<button type="submit">Predict</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

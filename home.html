@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Human Development Index</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Human Development Index</h1>
+
+    <h3 style="color:white;">
+        HDI is used to measure the overall development of a country based on health, education, and income. It helps compare countries, identify development gaps, and support better policy and planning decisions.
+    </h3>
+
+    <p style="color:#E6E6E6; font-size:16px; line-height:28px; margin-top:20px;">
+        This application predicts the Human Development Index (HDI)
+        using four important indicators:
+        <br><br>
+        • Life Expectancy at Birth
+        <br>
+        • Expected Years of Schooling
+        <br>
+        • Mean Years of Schooling
+        <br>
+        • Gross National Income Per Capita
+        <br>
+    </p>
+
+    <br>
+
+    <a href="/predict">
+        <button class="btn">Start Prediction</button>
+    </a>
+
+</div>
+
+</body>
+</html>
