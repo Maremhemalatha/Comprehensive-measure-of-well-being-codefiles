@@ -141,3 +141,11 @@ http://127.0.0.1:5000
 ## 👩‍💻 Developed By
 
 Machine Learning Internship Project
+
+Marem Hemalatha
+
+Jarapala Padma Bai
+
+Prasanna Kogila
+
+Sailekhana Thuraka
